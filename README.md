@@ -1,2 +1,2 @@
-# dailyPlanner
+# DailyPlanner
 Homerwork 5
