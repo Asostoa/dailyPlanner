@@ -1,10 +1,12 @@
-
+//Creating variables and funtion to the time show to the user
 var update = function () {
   document.getElementById("currentDay")
     .innerHTML = moment().format('dddd, MMMM Do YYYY, H:mm:ss a');
 }
 setInterval(update, 1000);
 
+//funtion that permits save the input of the user in our local storage
+//we create a key and a value that we add to our local storage
 $(".save").on("click", function () {
 
   var input = $(this).prev().val();
@@ -14,7 +16,8 @@ $(".save").on("click", function () {
   console.log(hour)
 });
 
-// Setting input area for each hour to local storage
+// we show the user if he had saved information in the hour
+//we access our localStorage and get the info that is saved in the storage 
 $(".text-entry1").val(localStorage.getItem("9am"));
 $(".text-entry2").val(localStorage.getItem("10am"));
 $(".text-entry3").val(localStorage.getItem("11am"));
@@ -27,7 +30,7 @@ $(".text-entry9").val(localStorage.getItem("5pm"));
 $(".text-entry10").val(localStorage.getItem("6pm"));
 $(".text-entry11").val(localStorage.getItem("7pm"));
 
-
+// we compare eah hour with the moment and add our .css classes if necesary 
 if ((moment().format("H")) > 9) {
   $(".calendar-row1").addClass("past");
 } else if ((moment().format("H")) < 9) {
@@ -102,10 +105,8 @@ if ((moment().format("H")) > 17) {
 }
 
 $(".delete").on("click", function () {
-
-  var input = $(this).prev().val();
-  var hour = $(this).prev().attr("id");
-
-  localStorage.removeItem(hour);
-  console.log(hour)
+var hour = 
+  $(this).prev().val();
+  localStorage.removeItem('hour')
+  console.log(this)
 });

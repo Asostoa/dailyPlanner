@@ -13,9 +13,9 @@ When we access the home of our site, the site presents the local time. After thi
    Screenshot
 
  
-## Autor
+# Autor
 
-# Alexander - Initial work - https://github.com/Asostoa
+### Alexander - Initial work - https://github.com/Asostoa
  
  
 ## Acknowledgments 
