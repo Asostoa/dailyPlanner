@@ -3,6 +3,7 @@
  
 ## Configuration instructions
 Go to Link
+https://asostoa.github.io/dailyPlanner/
 ## Built With
 - Bootstrap - Used to create a grid
 - jQuerry  - Used to make this app dynamic 
